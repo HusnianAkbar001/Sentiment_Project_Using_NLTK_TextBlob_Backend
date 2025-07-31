@@ -70,6 +70,10 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://sentiment-project-using-nltk-text-b.vercel.app",
+    "https://sentiment-project-using-nltk-text-blob-backend-86ifh6bb6.vercel.app",
+    "https://sentiment-project-using-nltk-text-blob-backend-8komd6ezn.vercel.app",
+    "https://sentiment-project-using-nltk-text-blob-backend-8pa5lsks4.vercel.app",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True  # Development ke liye
@@ -100,7 +104,7 @@ WSGI_APPLICATION = 'sentiment_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': ':memory:',  # In-memory database for Vercel
     }
 }
 # DATABASES = {

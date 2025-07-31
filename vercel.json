@@ -14,5 +14,6 @@
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "sentiment_project.settings"
-  }
+  },
+  "buildCommand": "bash build_files.sh"
 } 

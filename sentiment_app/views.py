@@ -12,15 +12,15 @@ class AnalyzeSentimentView(APIView):
     permission_classes = [IsAuthenticated]
     
     def post(self, request):
-        input_text = request.data.get('input_text', '')
-        
-        if not input_text.strip():
-            return Response(
-                {'error': 'Input text is required'}, 
-                status=status.HTTP_400_BAD_REQUEST
-            )
-        
         try:
+            input_text = request.data.get('input_text', '')
+            
+            if not input_text.strip():
+                return Response(
+                    {'error': 'Input text is required'}, 
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            
             # Analyze sentiment using TextBlob
             blob = TextBlob(input_text)
             polarity_score = blob.sentiment.polarity

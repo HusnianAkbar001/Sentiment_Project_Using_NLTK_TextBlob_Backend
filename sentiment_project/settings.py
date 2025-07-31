@@ -104,7 +104,7 @@ WSGI_APPLICATION = 'sentiment_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': ':memory:',  # In-memory database for Vercel
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 # DATABASES = {

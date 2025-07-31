@@ -24,8 +24,8 @@ MANIFEST
 # Django
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# db.sqlite3
+# db.sqlite3-journal
 media/
 staticfiles/
 
@@ -129,9 +129,9 @@ ehthumbs.db
 Thumbs.db
 
 # Database
-*.db
-*.sqlite
-*.sqlite3
+# *.db
+# *.sqlite
+# *.sqlite3
 
 # Logs
 logs
@@ -224,8 +224,8 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# db.sqlite3
+# db.sqlite3-journal
 
 # Flask stuff:
 instance/
